@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000190 /* PersonalEnglishDictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000064 /* PersonalEnglishDictionaryApp.swift */; };
+		000000000000000000000191 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* Word.swift */; };
+		000000000000000000000192 /* SpacedRepetitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* SpacedRepetitionService.swift */; };
+		000000000000000000000193 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000067 /* SpeechService.swift */; };
+		000000000000000000000194 /* DictionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000068 /* DictionaryViewModel.swift */; };
+		000000000000000000000195 /* PracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000069 /* PracticeViewModel.swift */; };
+		000000000000000000000196 /* WordEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006A /* WordEditorViewModel.swift */; };
+		000000000000000000000197 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006B /* DictionaryView.swift */; };
+		000000000000000000000198 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006C /* FavoritesView.swift */; };
+		000000000000000000000199 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006D /* HomeView.swift */; };
+		00000000000000000000019A /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006E /* PracticeView.swift */; };
+		00000000000000000000019B /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006F /* RootTabView.swift */; };
+		00000000000000000000019C /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000070 /* WordDetailView.swift */; };
+		00000000000000000000019D /* WordEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000071 /* WordEditorView.swift */; };
+		00000000000000000000019E /* WordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000072 /* WordRow.swift */; };
+		000000000000000000000321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000320 /* Assets.xcassets */; };
+		23089D5230B72EDE00832205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23089D5130B72EDE00832205 /* LaunchScreen.storyboard */; };
+		23089D5430B7313000832205 /* LexiTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D5330B7313000832205 /* LexiTheme.swift */; };
+		23089D5630B7376700832205 /* AudioRecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D5530B7376000832205 /* AudioRecordingService.swift */; };
+		23089D5830B7381000832205 /* AudioPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D5730B737FB00832205 /* AudioPreprocessor.swift */; };
+		23089D5A30B7383000832205 /* PhonemeRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D5930B7382F00832205 /* PhonemeRecognitionService.swift */; };
+		23089D6130B73B2400832205 /* PhoneticDictionaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D6030B73B2400832205 /* PhoneticDictionaryService.swift */; };
+		23089D6D30B73E7000832205 /* vocab-by-id.json in Resources */ = {isa = PBXBuildFile; fileRef = 23089D6930B73E7000832205 /* vocab-by-id.json */; };
+		23089D6E30B73E7000832205 /* PhonemeCTC.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 23089D6A30B73E7000832205 /* PhonemeCTC.mlmodelc */; };
+		23089D6F30B73E7000832205 /* cmudict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 23089D6B30B73E7000832205 /* cmudict.txt */; };
+		23089D7030B73E7000832205 /* CMUDict-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 23089D6C30B73E7000832205 /* CMUDict-LICENSE.txt */; };
+		23089D7230B73EA700832205 /* PronunciationScoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D7130B73EA600832205 /* PronunciationScoringService.swift */; };
+		23089D7430B73EBD00832205 /* PhonemeModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D7330B73EBC00832205 /* PhonemeModelTest.swift */; };
+		23089D7630B7422900832205 /* PronunciationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D7530B7422800832205 /* PronunciationResult.swift */; };
+		23089D7830B7425F00832205 /* PronunciationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D7730B7425E00832205 /* PronunciationViewModel.swift */; };
+		23089D7A30B7429100832205 /* PronunciationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23089D7930B7429000832205 /* PronunciationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000008 /* PersonalEnglishDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalEnglishDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000064 /* PersonalEnglishDictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalEnglishDictionaryApp.swift; sourceTree = "<group>"; };
+		000000000000000000000065 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		000000000000000000000066 /* SpacedRepetitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacedRepetitionService.swift; sourceTree = "<group>"; };
+		000000000000000000000067 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		000000000000000000000068 /* DictionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000069 /* PracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewModel.swift; sourceTree = "<group>"; };
+		00000000000000000000006A /* WordEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditorViewModel.swift; sourceTree = "<group>"; };
+		00000000000000000000006B /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		00000000000000000000006C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		00000000000000000000006D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00000000000000000000006E /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		00000000000000000000006F /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		000000000000000000000070 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000071 /* WordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditorView.swift; sourceTree = "<group>"; };
+		000000000000000000000072 /* WordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRow.swift; sourceTree = "<group>"; };
+		000000000000000000000320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23089D5130B72EDE00832205 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23089D5330B7313000832205 /* LexiTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexiTheme.swift; sourceTree = "<group>"; };
+		23089D5530B7376000832205 /* AudioRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingService.swift; sourceTree = "<group>"; };
+		23089D5730B737FB00832205 /* AudioPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPreprocessor.swift; sourceTree = "<group>"; };
+		23089D5930B7382F00832205 /* PhonemeRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonemeRecognitionService.swift; sourceTree = "<group>"; };
+		23089D6030B73B2400832205 /* PhoneticDictionaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticDictionaryService.swift; sourceTree = "<group>"; };
+		23089D6630B73E4600832205 /* PersonalEnglishDictionary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PersonalEnglishDictionary.xcodeproj; sourceTree = "<group>"; };
+		23089D6930B73E7000832205 /* vocab-by-id.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "vocab-by-id.json"; path = "PersonalEnglishDictionary/Resources/vocab-by-id.json"; sourceTree = "<group>"; };
+		23089D6A30B73E7000832205 /* PhonemeCTC.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PhonemeCTC.mlmodelc; path = PersonalEnglishDictionary/Resources/PhonemeCTC.mlmodelc; sourceTree = "<group>"; };
+		23089D6B30B73E7000832205 /* cmudict.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = cmudict.txt; path = PersonalEnglishDictionary/Resources/cmudict.txt; sourceTree = "<group>"; };
+		23089D6C30B73E7000832205 /* CMUDict-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CMUDict-LICENSE.txt"; path = "PersonalEnglishDictionary/Resources/CMUDict-LICENSE.txt"; sourceTree = "<group>"; };
+		23089D7130B73EA600832205 /* PronunciationScoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationScoringService.swift; sourceTree = "<group>"; };
+		23089D7330B73EBC00832205 /* PhonemeModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonemeModelTest.swift; sourceTree = "<group>"; };
+		23089D7530B7422800832205 /* PronunciationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationResult.swift; sourceTree = "<group>"; };
+		23089D7730B7425E00832205 /* PronunciationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationViewModel.swift; sourceTree = "<group>"; };
+		23089D7930B7429000832205 /* PronunciationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				23089D6B30B73E7000832205 /* cmudict.txt */,
+				23089D6C30B73E7000832205 /* CMUDict-LICENSE.txt */,
+				23089D6A30B73E7000832205 /* PhonemeCTC.mlmodelc */,
+				23089D6930B73E7000832205 /* vocab-by-id.json */,
+				23089D6630B73E4600832205 /* PersonalEnglishDictionary.xcodeproj */,
+				000000000000000000000014 /* PersonalEnglishDictionary */,
+				000000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000008 /* PersonalEnglishDictionary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000014 /* PersonalEnglishDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000015 /* App */,
+				000000000000000000000016 /* Models */,
+				000000000000000000000017 /* Services */,
+				000000000000000000000018 /* ViewModels */,
+				000000000000000000000019 /* Views */,
+				000000000000000000000320 /* Assets.xcassets */,
+			);
+			path = PersonalEnglishDictionary;
+			sourceTree = "<group>";
+		};
+		000000000000000000000015 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000064 /* PersonalEnglishDictionaryApp.swift */,
+				23089D5130B72EDE00832205 /* LaunchScreen.storyboard */,
+				23089D5330B7313000832205 /* LexiTheme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000016 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000065 /* Word.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000017 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				23089D7530B7422800832205 /* PronunciationResult.swift */,
+				23089D7330B73EBC00832205 /* PhonemeModelTest.swift */,
+				23089D7130B73EA600832205 /* PronunciationScoringService.swift */,
+				23089D5930B7382F00832205 /* PhonemeRecognitionService.swift */,
+				23089D5730B737FB00832205 /* AudioPreprocessor.swift */,
+				23089D5530B7376000832205 /* AudioRecordingService.swift */,
+				000000000000000000000066 /* SpacedRepetitionService.swift */,
+				000000000000000000000067 /* SpeechService.swift */,
+				23089D6030B73B2400832205 /* PhoneticDictionaryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		000000000000000000000018 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				23089D7730B7425E00832205 /* PronunciationViewModel.swift */,
+				000000000000000000000068 /* DictionaryViewModel.swift */,
+				000000000000000000000069 /* PracticeViewModel.swift */,
+				00000000000000000000006A /* WordEditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		000000000000000000000019 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23089D7930B7429000832205 /* PronunciationView.swift */,
+				00000000000000000000006B /* DictionaryView.swift */,
+				00000000000000000000006C /* FavoritesView.swift */,
+				00000000000000000000006D /* HomeView.swift */,
+				00000000000000000000006E /* PracticeView.swift */,
+				00000000000000000000006F /* RootTabView.swift */,
+				000000000000000000000070 /* WordDetailView.swift */,
+				000000000000000000000071 /* WordEditorView.swift */,
+				000000000000000000000072 /* WordRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23089D6730B73E4600832205 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000002 /* PersonalEnglishDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000A /* Build configuration list for PBXNativeTarget "PersonalEnglishDictionary" */;
+			buildPhases = (
+				000000000000000000000005 /* Sources */,
+				000000000000000000000006 /* Frameworks */,
+				000000000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalEnglishDictionary;
+			productName = PersonalEnglishDictionary;
+			productReference = 000000000000000000000008 /* PersonalEnglishDictionary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					000000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000009 /* Build configuration list for PBXProject "PersonalEnglishDictionary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000003;
+			productRefGroup = 000000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 23089D6730B73E4600832205 /* Products */;
+					ProjectRef = 23089D6630B73E4600832205 /* PersonalEnglishDictionary.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				000000000000000000000002 /* PersonalEnglishDictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23089D6D30B73E7000832205 /* vocab-by-id.json in Resources */,
+				23089D6E30B73E7000832205 /* PhonemeCTC.mlmodelc in Resources */,
+				23089D6F30B73E7000832205 /* cmudict.txt in Resources */,
+				23089D7030B73E7000832205 /* CMUDict-LICENSE.txt in Resources */,
+				000000000000000000000321 /* Assets.xcassets in Resources */,
+				23089D5230B72EDE00832205 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000190 /* PersonalEnglishDictionaryApp.swift in Sources */,
+				000000000000000000000191 /* Word.swift in Sources */,
+				000000000000000000000192 /* SpacedRepetitionService.swift in Sources */,
+				000000000000000000000193 /* SpeechService.swift in Sources */,
+				000000000000000000000194 /* DictionaryViewModel.swift in Sources */,
+				23089D7230B73EA700832205 /* PronunciationScoringService.swift in Sources */,
+				000000000000000000000195 /* PracticeViewModel.swift in Sources */,
+				000000000000000000000196 /* WordEditorViewModel.swift in Sources */,
+				23089D7630B7422900832205 /* PronunciationResult.swift in Sources */,
+				23089D5830B7381000832205 /* AudioPreprocessor.swift in Sources */,
+				23089D5A30B7383000832205 /* PhonemeRecognitionService.swift in Sources */,
+				000000000000000000000197 /* DictionaryView.swift in Sources */,
+				23089D7A30B7429100832205 /* PronunciationView.swift in Sources */,
+				23089D7830B7425F00832205 /* PronunciationViewModel.swift in Sources */,
+				000000000000000000000198 /* FavoritesView.swift in Sources */,
+				000000000000000000000199 /* HomeView.swift in Sources */,
+				00000000000000000000019A /* PracticeView.swift in Sources */,
+				00000000000000000000019B /* RootTabView.swift in Sources */,
+				23089D5630B7376700832205 /* AudioRecordingService.swift in Sources */,
+				23089D7430B73EBD00832205 /* PhonemeModelTest.swift in Sources */,
+				23089D6130B73B2400832205 /* PhoneticDictionaryService.swift in Sources */,
+				00000000000000000000019C /* WordDetailView.swift in Sources */,
+				00000000000000000000019D /* WordEditorView.swift in Sources */,
+				00000000000000000000019E /* WordRow.swift in Sources */,
+				23089D5430B7313000832205 /* LexiTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8568JZJ3QU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = 8568JZJ3QU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		00000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lexi;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lexi uses your microphone to analyze and improve your pronunciation.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PersonalEnglishDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lexi;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lexi uses your microphone to analyze and improve your pronunciation.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PersonalEnglishDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000009 /* Build configuration list for PBXProject "PersonalEnglishDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000B /* Debug */,
+				00000000000000000000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000A /* Build configuration list for PBXNativeTarget "PersonalEnglishDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000D /* Debug */,
+				00000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
